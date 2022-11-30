@@ -11,10 +11,10 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - run: sudo apt-get update
       - run: sudo apt-get install tree
-      - run: ls -lh
+      - run: ls -lha
       - run: pwd
       - run: tree
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls -lha ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
